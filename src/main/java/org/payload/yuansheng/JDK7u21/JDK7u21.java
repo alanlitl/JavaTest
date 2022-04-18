@@ -46,7 +46,7 @@ public class JDK7u21 {
         map.put(zeroHashCodeStr, templates);
 
         byte[] barr = serial(set);
-        
+
         ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(barr));
         ois.readObject();
     }
