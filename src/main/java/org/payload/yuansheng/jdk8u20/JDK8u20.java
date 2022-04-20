@@ -61,7 +61,7 @@ public class JDK8u20 {
         String zeroHashCodeStr = "f5a5a608";
 
         HashMap map = new HashMap();
-        map.put(zeroHashCodeStr, "foo");
+        map.put(zeroHashCodeStr, "any");
         Constructor handlerConstructor = Class.forName("sun.reflect.annotation.AnnotationInvocationHandler").
                 getDeclaredConstructor(Class.class, Map.class);
         handlerConstructor.setAccessible(true);
